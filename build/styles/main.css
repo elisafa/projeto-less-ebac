@@ -63,23 +63,23 @@ section .products .product-item .product-button {
   margin-top: 8px;
   text-decoration: none;
 }
-.product-button:hover {
+section .products .product-item .product-button:hover {
   background-color: #4cd137;
 }
 @media screen and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
-  .products {
+  .container .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media screen and (max-width: 767px) {
-  .products {
+  .container .products {
     display: block;
   }
-  .product-item {
+  .container .products .product-item {
     margin-bottom: 32px;
   }
 }
