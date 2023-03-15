@@ -1,4 +1,6 @@
 @import "variaveis.less";
+@import "maps.less";
+
 @breackpointTablet: ~ "(max-width: 1023px)";
 @breackpointMobile: ~ "(max-width: 767px)";
 
@@ -10,7 +12,7 @@
 }
 
 body {
-  background-color: @corDeFundo;
+  background-color: #colors[corDeFundo];
 }
 
 li {
@@ -41,9 +43,8 @@ li {
     }
   }
 
-
 header {
-  background-color: @corDoHeader;
+  background-color: #colors[corDoHeader];
   position: sticky;
   top: 0;
   left: 0;
@@ -54,7 +55,6 @@ header {
     align-items: center;
     padding: 16px 0;
 
-
     .menu {
       display: flex;
 
@@ -63,14 +63,13 @@ header {
         margin-left: 24px;
 
         a {
-          color: #fff;
+          color: #colors[corLink];
           text-decoration: none;
         }
       }
     }
   }
 }
-
 
 section {
   padding: 56px 0;
@@ -91,7 +90,7 @@ section {
 
       .product-button {
         display: block;
-        background-color: #44bd32;
+        background-color: #colors[corButtonProduct];
         color: #fff;
         text-align: center;
         padding: 8px 0;
@@ -100,10 +99,9 @@ section {
         text-decoration: none;
 
         &:hover {
-          background-color: #4cd137;
+          background-color: #colors[corButtonProductHover];
         }
       }
     }
   }
-
 }
